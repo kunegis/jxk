@@ -1,34 +1,3 @@
-// 
-// The keyboard layout use by Jerome Kunegis <kunegis@gmail.com>
-// 
-// How to use on Ubuntu 14.4 with Unity:
-//
-// * Copy this file ('jxk') to /usr/share/X11/xkb/symbols/
-// 
-// * Insert the following snippet into the file /usr/share/X11/xkb/rules/evdev.xml
-//
-//     <layout>
-//      <configItem>
-//        <name>jxk</name>
-//        <shortDescription>en</shortDescription>
-//        <description>Jérôme's Keyboard Layout</description>
-//        <languageList>
-//          <iso639Id>en</iso639Id>
-//        </languageList>
-//      </configItem>
-//      <variantList/>
-//    </layout>
-//
-//  (insert it just before </layoutList>)
-//
-// * Reboot and then it appears in the menu as "EN₁" (Just doing what
-//   ./keys does it not enough for it to work through Unity)
-//
-// * (If you want to test changes in it, use ./keys)
-//
-// Copyright (c) 2016 Jerome Kunegis <kunegis@gmail.com>
-//
-
 default  partial alphanumeric_keys
 xkb_symbols "basic" {
 
