@@ -1,0 +1,12 @@
+#! /bin/sh
+#
+# Deploy the keyboard layout quickly for testing.  To actually install
+# it, see the file 'jxk'. 
+#
+
+set -e
+
+sudo cp jxk /usr/share/X11/xkb/symbols/ 
+sudo rm -f /var/lib/xkb/*.xkm
+sudo dpkg-reconfigure xkb-data 
+setxkbmap jxk

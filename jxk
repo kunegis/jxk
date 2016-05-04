@@ -1,0 +1,126 @@
+// 
+// The keyboard layout use by Jerome Kunegis <kunegis@gmail.com>
+// 
+// How to use on Ubuntu 14.4 with Unity:
+//
+// * Copy this file ('jxk') to /usr/share/X11/xkb/symbols/
+// 
+// * Insert the following snippet into the file /usr/share/X11/xkb/rules/evdev.xml
+//
+//     <layout>
+//      <configItem>
+//        <name>jxk</name>
+//        <shortDescription>en</shortDescription>
+//        <description>Jérôme's Keyboard Layout</description>
+//        <languageList>
+//          <iso639Id>en</iso639Id>
+//        </languageList>
+//      </configItem>
+//      <variantList/>
+//    </layout>
+//
+//  (insert it just before </layoutList>)
+//
+// * Reboot and then it appears in the menu as "EN₁" (Just doing what
+//   ./keys does it not enough for it to work through Unity)
+//
+// * (If you want to test changes in it, use ./keys)
+//
+// Copyright (c) 2016 Jerome Kunegis <kunegis@gmail.com>
+//
+
+default  partial alphanumeric_keys
+xkb_symbols "basic" {
+
+	name[Group1]="Jerome's Keyboard Layout";
+
+	include "latin"
+	include "ctrl(nocaps)"
+
+	/////////////////////////// Number row ///////////////////////////////////
+
+	key <TLDE> {[  asterisk,    asciitilde,  U2218,          U223C           ]};
+	key <AE01> {[  1,           exclam,      U00AC,          U0361           ]};
+	key <AE02> {[  2,           at,          U2122,          U2115           ]};	
+	key <AE03> {[  3,           numbersign,  U2026,	         U22EF	         ]};
+	key <AE04> {[  4,	    dollar,	 U2200,	         U2203	         ]};
+	key <AE05> {[  5,	    percent,	 U2030,	         U2210	         ]};
+	key <AE06> {[  6,	    asciicircum, U2229,	         U222A	         ]};
+	key <AE07> {[  7, 	    ampersand,	 U2205,	         U2022	         ]};
+	key <AE08> {[  8,	    U0261,	 U2286,	         U2282	         ]};
+	key <AE09> {[  9,	    braceleft,	 U2227,	         U2228	         ]};
+	key <AE10> {[  0,	    braceright,	 U211D,	         U211A	         ]};
+	key <AE11> {[  minus,	    underscore,	 U2261,		 U2208		 ]};
+	key <AE12> {[  equal,	    plus,	 U2260,		 U2248		 ]};
+
+	/////////////////////////// Top row //////////////////////////////////////
+
+	key <AD01> {[  q,           Q,           U0283,          U0250           ]};
+	key <AD02> {[  w,	    W,		 U026A,          U0294	         ]};
+	key <AD03> {[  e,	    E,		 U20AC,	         U0259	         ]}; 
+	key <AD04> {[  r,	    R,		 U0281,	         U02D0	         ]};
+	key <AD05> {[  t,	    T,		 U00E9,	         U00C9 	         ]};
+	key <AD06> {[  y,           Y,           U028F,          U0303           ]};
+	key <AD07> {[  u,	    U,		 U0265,	         U028A	         ]};
+	key <AD08> {[  i,	    I,		 U0131,	         U0130	         ]};
+	key <AD09> {[  o,	    O,		 U0153,	         U0152	         ]};
+	key <AD10> {[  p,	    P,		 U00E7,	         U00C7	         ]};
+	key <AD11> {[  parenleft,   bracketleft, dead_diaeresis, dead_macron     ]};
+	key <AD12> {[  parenright,  bracketright,dead_tilde,     dead_breve      ]};
+
+    	/////////////////////////// Middle row ///////////////////////////////////	
+
+	key <CAPS> {[  Control_L                                                 ]};
+	key <AC01> {[  a,           A,	         U2194,          U21D4           ]}; 
+	key <AC02> {[  s,           S,           ssharp,         U017F           ]}; 
+	key <AC03> {[  d,           D,           U0254,          U028C           ]};  
+	key <AC04> {[  f,           F,           U025B,          U028E           ]};
+	key <AC05> {[  g,           G,		 U0292,          U027E           ]};
+	key <AC06> {[  h,	    H,		 U2190,	         U21D0           ]};
+	key <AC07> {[  j,	    J,		 U2193,	         U21D3	         ]};
+	key <AC08> {[  k, 	    K,		 U2191,	         U21D1	         ]};
+	key <AC09> {[  l,	    L,		 U2192,	         U21D2	         ]};
+	key <AC10> {[  semicolon,   endash,      dead_acute,     dead_doubleacute]};
+   	key <AC11> {[  colon,       quotedbl,	 dead_circumflex,dead_caron	 ]}; 
+	key <BKSL> {[  question,    bar,	 dead_grave,	 dead_cedilla	 ]};
+
+	///////////////////////////// Bottom row /////////////////////////////////
+
+	key <LSGT> {[  apostrophe,  emdash,      U02C8,          U02CC           ]};
+	key <AB01> {[  z,           Z,           U00AB,          U2039           ]};
+	key <AB02> {[  x,           X,           U00BB,          U203A           ]};
+	key <AB03> {[  c,	    C,		 U201E,	         U201A	         ]};
+	key <AB04> {[  v,	    V,		 U201C,	         U2018	         ]};
+	key <AB05> {[  b,	    B,		 U201D,	         U2019	         ]};
+	key <AB06> {[  n,	    N,		 U014B,	         U0272	         ]};
+	key <AB07> {[  m, 	    M,		 U0251,	         U0252	         ]};
+	key <AB08> {[  comma,	    less,	 U27E8,		 U2264	         ]};
+	key <AB09> {[  period,	    greater,	 U27E9,		 U2265	         ]};
+	key <AB10> {[  slash,	    backslash,	 dead_abovedot,  dead_belowdot   ]};
+
+	///////////////////////////// Space row //////////////////////////////////
+
+	key <LWIN> { type[Group1]="TWO_LEVEL", [ ISO_Level3_Shift, Multi_key ]    };
+        modifier_map Mod5   { <LWIN> };
+	key <LALT> {[  Alt_L, Alt_L ]};
+	key <MENU> {[  Multi_key                                                 ]};
+	key <RALT> { type[Group1]="TWO_LEVEL", [ ISO_Level3_Shift, Multi_key ]    };
+        modifier_map Mod5   { <RALT> };
+
+	///////////////////////////// Number pad /////////////////////////////////
+	key <KP0>  {[  U03C0,	U03A0, 	U03B4,	U0394                            ]};
+	key <KP1>  {[  U03B3,   U0393,	U03B8,  U0398                            ]};
+	key <KP2>  {[  U03BC,   U039C,  U03BE,  U039E                            ]};
+	key <KP3>  {[  U03C7,   U03A7,  U03C5,  U03A5                            ]};
+	key <KP4>  {[  U03B2,   U0392,  U03B7,  U0397                            ]};
+	key <KP5>  {[  U03BB,   U039B,  U03BD,  U039D                            ]};	
+	key <KP6>  {[  U03C6,   U03A6,  U03C4,  U03A4                            ]};
+	key <KP7>  {[  U03B1,   U0391,  U03B6,  U0396                            ]};
+	key <KP8>  {[  U03B5,   U0395,  U03BA,  U039A                            ]};
+	key <KP9>  {[  U03C3,   U03A3,  U03C1,  U03A1                            ]};
+	key <KPDL> {[  U03C9,   U03A9,  U03C8,  U03A8                            ]};
+	key <KPAD> {[  U03C2                                                     ]};
+	key <KPDV> {[  U00F7,   U00F7,  U03B9,  U0399                            ]};
+	key <KPMU> {[  U00D7,   U00D7,  U03BF,  U039F                            ]};
+	key <KPSU> {[  U2212                                                     ]};
+};
