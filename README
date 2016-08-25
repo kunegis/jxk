@@ -2,8 +2,12 @@ JXK
 ===
 
 The keyboard layout used by Jérôme Kunegis. 
- 
-How to use on Ubuntu 14.4 with Unity:
+
+        "I use this keyboard layout." --Jérôme Kunegis
+
+== How to use on Ubuntu == 
+
+(tested on 14.04 and 16.04 with Unity)
 
 * Copy the file 'jxk' to /usr/share/X11/xkb/symbols/
  
@@ -23,9 +27,14 @@ How to use on Ubuntu 14.4 with Unity:
 
 (insert it just before </layoutList>)
 
-* Reboot and then it appears in the menu as "EN₁" (Just doing what
-  ./keys does it not enough for it to work through Unity)
+* Reboot (Just doing what ./keys does it not enough for it to work
+  through Unity)  
 
-* (If you want to test changes in it, use ./keys)
+* "Jérôme's keyboard layout" is now available in Unity's keyboard
+  layout selection menu.  It is registered as a keyboard layout for
+  the English language, and therefore will appear as "EN₁" or similar
+  in the task bar. 
 
-Copyright (c) 2016 Jérôme Kunegis <kunegis@gmail.com>
+If you want to test changes in it, use './keys'. 
+
+Copyright © 2016 Jérôme Kunegis <kunegis@gmail.com>
