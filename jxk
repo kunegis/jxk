@@ -1,4 +1,4 @@
-default  partial alphanumeric_keys
+default  partial alphanumeric_keys modifier_keys
 xkb_symbols "basic" {
 
 	name[Group1]="Jerome's Keyboard Layout";
@@ -77,19 +77,19 @@ xkb_symbols "basic" {
         modifier_map Mod5   { <RALT> };
 
 	///////////////////////////// Number pad /////////////////////////////////
-	key <KP0>  {[  U03C0,	U03A0, 	U03B4,	U0394                            ]};
-	key <KP1>  {[  U03B3,   U0393,	U03B8,  U0398                            ]};
-	key <KP2>  {[  U03BC,   U039C,  U03BE,  U039E                            ]};
-	key <KP3>  {[  U03C7,   U03A7,  U03C5,  U03A5                            ]};
-	key <KP4>  {[  U03B2,   U0392,  U03B7,  U0397                            ]};
-	key <KP5>  {[  U03BB,   U039B,  U03BD,  U039D                            ]};	
-	key <KP6>  {[  U03C6,   U03A6,  U03C4,  U03A4                            ]};
-	key <KP7>  {[  U03B1,   U0391,  U03B6,  U0396                            ]};
-	key <KP8>  {[  U03B5,   U0395,  U03BA,  U039A                            ]};
-	key <KP9>  {[  U03C3,   U03A3,  U03C1,  U03A1                            ]};
-	key <KPDL> {[  U03C9,   U03A9,  U03C8,  U03A8                            ]};
-	key <KPAD> {[  U03C2                                                     ]};
-	key <KPDV> {[  U00F7,   U00F7,  U03B9,  U0399                            ]};
-	key <KPMU> {[  U00D7,   U00D7,  U03BF,  U039F                            ]};
-	key <KPSU> {[  U2212                                                     ]};
+//	key <KP0>  {[  U03C0,	U03A0, 	U03B4,	U0394                            ]};
+//	key <KP1>  {[  U03B3,   U0393,	U03B8,  U0398                            ]};
+//	key <KP2>  {[  U03BC,   U039C,  U03BE,  U039E                            ]};
+//	key <KP3>  {[  U03C7,   U03A7,  U03C5,  U03A5                            ]};
+//	key <KP4>  {[  U03B2,   U0392,  U03B7,  U0397                            ]};
+//	key <KP5>  {[  U03BB,   U039B,  U03BD,  U039D                            ]};	
+//	key <KP6>  {[  U03C6,   U03A6,  U03C4,  U03A4                            ]};
+//	key <KP7>  {[  U03B1,   U0391,  U03B6,  U0396                            ]};
+//	key <KP8>  {[  U03B5,   U0395,  U03BA,  U039A                            ]};
+//	key <KP9>  {[  U03C3,   U03A3,  U03C1,  U03A1                            ]};
+//	key <KPDL> {[  U03C9,   U03A9,  U03C8,  U03A8                            ]};
+//	key <KPAD> {[  U03C2                                                     ]};
+//	key <KPDV> {[  U00F7,   U00F7,  U03B9,  U0399                            ]};
+//	key <KPMU> {[  U00D7,   U00D7,  U03BF,  U039F                            ]};
+//	key <KPSU> {[  U2212                                                     ]};
 };
