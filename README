@@ -5,6 +5,7 @@ The keyboard layout used by Jérôme Kunegis.
 
         "I use this keyboard layout." --Jérôme Kunegis
 
+
 == How to use on Ubuntu == 
 
 (tested on 14.04 and 16.04 with Unity)
@@ -23,9 +24,12 @@ The keyboard layout used by Jérôme Kunegis.
         </languageList>
       </configItem>
       <variantList/>
-    </layout>
+</layout>
 
 (insert it just before </layoutList>)
+
+Note:  we declare the new keyboard layout to be for the language
+"English".  It doesn't work to invent a new language code for it. 
 
 * Reboot (Just doing what ./keys does it not enough for it to work
   through Unity)  
@@ -37,5 +41,5 @@ The keyboard layout used by Jérôme Kunegis.
 
 If you want to test changes in it, use './keys'. 
 
-Copyright © 2016, 2017 Jérôme Kunegis <kunegis@gmail.com>
+Copyright © 2016, 2017, 2018 Jérôme Kunegis <kunegis@gmail.com>
 
