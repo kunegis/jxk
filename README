@@ -39,6 +39,8 @@ Note:  we declare the new keyboard layout to be for the language
   the English language, and therefore will appear as "EN₁" or similar
   in the task bar. 
 
+In Ubuntu 18.04:  I had to insert the content of 'jxk' into a preexisting layout; a new layout was not shown by the UI, but accepted by xmodmap.
+
 If you want to test changes in it, use './keys'. 
 
 Copyright © 2016, 2017, 2018 Jérôme Kunegis <kunegis@gmail.com>
