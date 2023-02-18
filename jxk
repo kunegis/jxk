@@ -88,8 +88,8 @@ xkb_symbols "basic" {
 	key <KP8>  {[  U03B5,   U0395,  U03BA,  U039A                            ]};
 	key <KP9>  {[  U03C3,   U03A3,  U03C1,  U03A1                            ]};
 	key <KPDL> {[  U03C9,   U03A9,  U03C8,  U03A8                            ]};
-	key <KPAD> {[  U03C2                                                     ]};
+	key <KPAD> {[  XF86AudioLowerVolume                                      ]}; // U03C2
 	key <KPDV> {[  U00F7,   U00F7,  U03B9,  U0399                            ]};
 	key <KPMU> {[  U00D7,   U00D7,  U03BF,  U039F                            ]};
-	key <KPSU> {[  U2212                                                     ]};
+	key <KPSU> {[  XF86AudioRaiseVolume                                      ]}; // U2212
 };
