@@ -13,7 +13,7 @@ xkb_symbols "basic" {
 	key <AE02> {[  2,           at,          U2122,          U2115           ]};	
 	key <AE03> {[  3,           numbersign,  U2026,	         U22EF	         ]};
 	key <AE04> {[  4,	    dollar,	 U2020,	         U2021	         ]};
-	key <AE05> {[  5,	    percent,	 U2030,	         U2210	         ]};
+	key <AE05> {[  5,	    percent,	 U2212,	         U2210	         ]};  // U2030
 	key <AE06> {[  6,	    asciicircum, U2229,	         U222A	         ]};
 	key <AE07> {[  7, 	    ampersand,	 U2205,	         U2022	         ]};
 	key <AE08> {[  8,	    U0261,	 U2286,	         U2282	         ]};
