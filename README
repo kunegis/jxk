@@ -5,46 +5,14 @@ The keyboard layout used by Jérôme Kunegis.
 
         "I use this keyboard layout." --Jérôme Kunegis
 
+(tested on 22.04)
 
-== How to use on Ubuntu == 
-
-(tested on 14.04 and 16.04 with Unity)
-
-* Copy the file 'jxk' to /usr/share/X11/xkb/symbols/
- 
-* Insert the following snippet into the file /usr/share/X11/xkb/rules/evdev.xml
-
-     <layout>
-      <configItem>
-        <name>jxk</name>
-        <shortDescription>en</shortDescription>
-        <description>Jérôme's Keyboard Layout</description>
-        <languageList>
-          <iso639Id>en</iso639Id>
-        </languageList>
-      </configItem>
-      <variantList/>
-</layout>
-
-(insert it just before </layoutList>)
-
-Note:  we declare the new keyboard layout to be for the language
-"English".  It doesn't work to invent a new language code for it. 
-
-* Reboot (Just doing what ./keys does it not enough for it to work
-  through Unity)  
-
-* "Jérôme's keyboard layout" is now available in Unity's keyboard
-  layout selection menu.  It is registered as a keyboard layout for
-  the English language, and therefore will appear as "EN₁" or similar
-  in the task bar. 
-
-In Ubuntu 18.04:  I had to insert the content of 'jxk' into a preexisting layout; a new layout was not shown by the UI, but accepted by xmodmap.
-
-If you want to test changes in it, use './keys'. 
+* Copy the file 'jxk' to /usr/share/X11/xkb/symbols/fr
+$ sudo rm -f /var/lib/xkb/*.xkm && sudo dpkg-reconfigure xkb-data 
+* Choose fr/"French" for the keyboard layout.  (Inventing a new code does not work.)
 
 If you think this is the most awesome repository ever, please donate to:
 
 https://www.paypal.com/donate?hosted_button_id=Q9JY2FB3AFHR6
 
-Copyright © 2016-2019 Jérôme Kunegis <kunegis@gmail.com>
+Copyright © 2016-2023 Jérôme Kunegis <kunegis@gmail.com>
