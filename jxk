@@ -10,10 +10,10 @@ xkb_symbols "basic" {
 
 	key <TLDE> {[  asterisk,    asciitilde,  U2218,          U223C           ]};
 	key <AE01> {[  1,           exclam,      U00AC,          U0361           ]};
-	key <AE02> {[  2,           at,          U2122,          U2115           ]};	
+	key <AE02> {[  2,           at,          U2122,          U2115           ]};
 	key <AE03> {[  3,           numbersign,  U2026,	         U22EF	         ]};
 	key <AE04> {[  4,	    dollar,	 U2020,	         U2021	         ]};
-	key <AE05> {[  5,	    percent,	 U2212,	         U2210	         ]};  // U2030
+	key <AE05> {[  5,	    percent,	 U2212,	         U221E	         ]};
 	key <AE06> {[  6,	    asciicircum, U2229,	         U222A	         ]};
 	key <AE07> {[  7, 	    ampersand,	 U2205,	         U2022	         ]};
 	key <AE08> {[  8,	    U0261,	 U2286,	         U2282	         ]};
@@ -88,8 +88,8 @@ xkb_symbols "basic" {
 	key <KP8>  {[  U03B5,   U0395,  U03BA,  U039A                            ]};
 	key <KP9>  {[  U03C3,   U03A3,  U03C1,  U03A1                            ]};
 	key <KPDL> {[  U03C9,   U03A9,  U03C8,  U03A8                            ]};
-	key <KPAD> {[  XF86AudioLowerVolume                                      ]}; // U03C2
+	key <KPAD> {[  XF86AudioLowerVolume                                      ]};
 	key <KPDV> {[  U00F7,   U00F7,  U03B9,  U0399                            ]};
 	key <KPMU> {[  U00D7,   U00D7,  U03BF,  U039F                            ]};
-	key <KPSU> {[  XF86AudioRaiseVolume                                      ]}; // U2212
+	key <KPSU> {[  XF86AudioRaiseVolume                                      ]};
 };
