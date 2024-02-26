@@ -17,8 +17,8 @@ xkb_symbols "basic" {
 	key <AE06> {[  6,	    asciicircum, U2229,	         U222A	         ]};
 	key <AE07> {[  7, 	    ampersand,	 U2205,	         U2022	         ]};
 	key <AE08> {[  8,	    U0261,	 U2286,	         U2282	         ]};
-	key <AE09> {[  9,	    braceleft,	 U2227,	         U2228	         ]};
-	key <AE10> {[  0,	    braceright,	 U211D,	         U211A	         ]};
+	key <AE09> {[  9,	    bracketleft, U2227,	         U2228	         ]};
+	key <AE10> {[  0,	    bracketright,U211D,	         U211A	         ]};
 	key <AE11> {[  minus,	    underscore,	 U2261,		 U2208		 ]};
 	key <AE12> {[  equal,	    plus,	 U2260,		 U2248		 ]};
 
@@ -34,8 +34,8 @@ xkb_symbols "basic" {
 	key <AD08> {[  i,	    I,		 U0131,	         U0130	         ]};
 	key <AD09> {[  o,	    O,		 U0153,	         U0152	         ]};
 	key <AD10> {[  p,	    P,		 U00E7,	         U00C7	         ]};
-	key <AD11> {[  parenleft,   bracketleft, dead_diaeresis, dead_macron     ]};
-	key <AD12> {[  parenright,  bracketright,dead_tilde,     dead_breve      ]};
+	key <AD11> {[  parenleft,   braceleft,   dead_diaeresis, dead_macron     ]};
+	key <AD12> {[  parenright,  braceright,  dead_tilde,     dead_breve      ]};
 
     	/////////////////////////// Middle row ///////////////////////////////////	
 
