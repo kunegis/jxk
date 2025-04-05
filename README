@@ -5,14 +5,14 @@ The keyboard layout used by Jérôme Kunegis.
 
         "I use this keyboard layout." --Jérôme Kunegis
 
-(tested on Ubuntu 22.04)
+(Tested on Ubuntu 22.04)
 
 * Copy the file 'jxk' to /usr/share/X11/xkb/symbols/fr
-$ sudo rm -f /var/lib/xkb/*.xkm && sudo dpkg-reconfigure xkb-data 
-* Choose fr/"French" for the keyboard layout.  (Inventing a new code does not work.)
+* Choose fr/"French" for the keyboard layout
+* (Inventing a new code does not work)
 
 If you think this is the most awesome repository ever, please donate to:
 
 https://www.paypal.com/donate?hosted_button_id=Q9JY2FB3AFHR6
 
-Copyright © 2016-2024 Jérôme Kunegis <kunegis@gmail.com>
+Copyright © 2016-2025 Jérôme Kunegis <kunegis@gmail.com>
